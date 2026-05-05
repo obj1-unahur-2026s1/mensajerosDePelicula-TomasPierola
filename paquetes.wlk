@@ -11,6 +11,9 @@ object paquete {
     method puedeSerEntregado(unMensajero) {
         return estaPago and destino.dejaPasar(unMensajero)
     }
+    method cambiarDestino(nuevoDestino) {
+        destino = nuevoDestino
+    }
 }
 
 object paquetito {
